@@ -1,0 +1,345 @@
+/*  ******************************  */
+/*  **********  styles  **********  */
+/*  ******************************  */
+
+
+html {
+    /* font-size: 10px; */
+    font-size: 62.5%;
+    /*  Accesivilidad  -  Equivalente a 10px  */
+}
+
+body {
+    background-color: var(--color-fondo-principal);
+}
+
+
+:root {
+
+    --color-fondo-principal: #DFDFDF;
+    --color-tarjeta: #0BB6E0;
+    --color-fondo-tarjeta: radial-gradient(circle,
+            #76cfe3 0%,
+            #04B4E0 25%,
+            #5bc5df 50%,
+            #0486b4 75%,
+            #76cfe3 100%);
+
+}
+
+
+/*  *****  Layout Principal  *****  */
+
+.main {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding-top: 5rem; */
+    /* background: linear-gradient(to bottom, #aaa, #eee, #aaa); */
+    background-color: var(--color-fondo-principal);
+}
+
+/*  *****  Contenedor de las Secciones  ***** */
+.main__secciones {
+    width: 100%;
+    height: 100vh;
+    padding-top: 5rem;
+}
+
+.color-section__red {
+    background-color: red;
+}
+
+
+
+
+/*  *****  Cards  *****  */
+.main__seccion-info {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    background: var(--color-fondo-tarjeta);
+    page-break-inside: avoid;
+    
+    margin-top: 5rem;
+    height: calc(1450px - 5rem - 40rem);
+    margin-bottom: 40rem;
+}
+
+
+.left {
+    margin-left: 2rem;
+    
+    border-radius: 0 10px 10px 0px;
+}
+
+.right {
+    margin-left: 25%;
+    margin-right: 5%;
+    padding-left: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+
+/*  *****  Cajas Formas Circulares  *****  */
+.seccion-info__shapes {
+    width: 50px;
+    /* height: 400px; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    background-color: var(--color-fondo-tarjeta);
+}
+
+
+/*  *****  Formas Circulares Izquierda  *****  */
+.shapes__shape-left {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-left: -15px;
+    /* background-color: #DFDFDF; */
+    background-color: var(--color-fondo-principal);
+
+}
+
+/*  *****  Formas Circulares Derecha  *****  */
+.shapes__shape-right {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-left: 35px;
+    background-color: var(--color-fondo-principal);
+
+}
+
+
+
+/*  *****  Imagen  *****  */
+.info__conter-container-principal-image {
+    min-width: 20rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    margin-left: 5rem;
+    /* background-color: brown; */
+}
+
+.user-info__container-image {
+    position: relative;
+    /* display: inline-block; */
+    display: flex;
+    width: 16rem;
+    height: 16rem;
+    /* margin-top: 7rem;
+        margin-left: 10rem; */
+    border: 2px solid white;
+    border-radius: 100%;
+    /* Mantener el contorno redondeado */
+    /* background-color: #CCC5BF; */
+    z-index: 1;
+}
+
+.user-info__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    /* Redondear la imagen */
+    transform: scale(0.88);
+    /* Ajustar tamaño de la imagen para dejar espacio al borde */
+    filter: grayscale(70%);
+    /* Aplicar gris tenue */
+    filter: brightness(90%);
+    /* Aumenta el brillo un 150% */
+    filter: contrast(120%);
+    /* Duplica el contraste */
+}
+
+/* Pseudoelemento after ajustado para que los puntos estén fuera de la imagen */
+.user-info__container-image::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    /* Mover el after fuera del contenedor */
+    left: -15px;
+    /* Ajuste horizontal */
+    z-index: -1;
+    /* Detrás de la imagen */
+    width: calc(100% + 30px);
+    /* Más grande que el contenedor */
+    height: calc(100% + 30px);
+    /* Más alto que el contenedor */
+    border-radius: 100%;
+    /* Mantener redondeado */
+    background-image: -webkit-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+    background-size: 0.6rem 0.6rem;
+    opacity: 0.4;
+}
+
+
+
+/*  *****  Contenido Caja 1 - Izquierda  *****  */
+
+.seccion-info__content {
+    width: calc(100% - 50px);
+    /* height: 400px; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.content__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5rem;
+    /* background-color: blanchedalmond; */
+}
+
+.container__descripciones {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.content__name {
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 4rem;
+    /* background-color:brown; */
+}
+
+.name__nombre {
+    display: flex;
+    color: var(--color-fondo-principal);
+    font-size: 4.3rem;
+}
+
+.name__apellidos {
+    display: flex;
+    color: black;
+    font-size: 4.3rem;
+}
+
+.info__profesion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 3.6rem;
+    /* margin-left: 17rem; */
+    margin-bottom: 3rem;
+    color: var(--color-fondo-principal);
+    /* background-color: blueviolet; */
+}
+
+.content__info {
+    font-size: 3.2rem;
+    margin-left: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.info__label {
+    color: var(--color-fondo-principal);
+    width: 20rem;
+    /* background-color: black; */
+}
+
+.info-description {
+    font-size: 2.8rem;
+}
+
+
+/*  *****  Contenido Caja 2 - Derecha  *****  */
+
+.info-header {
+    display: flex;
+    width: 100%;
+    font-size: 3.6rem;
+    justify-content: center;
+    background-color: var(--color-fondo-principal);
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+}
+
+.perfil__label {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    /* margin-left: 20rem; */
+    color: var(--color-fondo-principal)
+}
+
+.perfil__description {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    /* margin-left: 15rem; */
+}
+
+
+/*  *****  Tecnologias  *****  */
+.perfil__tecnologias-container {
+    width: 80%;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    /* margin-top: 2rem; */
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    /* background-color: blueviolet; */
+}
+
+.tipo__tecnologia {
+    position: relative;
+    top: 1rem;
+    width: 15rem;
+    font-size: 2.8rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #0587B5;
+}
+
+.tecnologias__front-end,
+.tecnologias__back-end {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* padding: 2rem; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 5rem;
+    background-color: var(--color-fondo-principal);
+    border-radius: 1em;
+
+}
+
+.perfil__tecnologia {
+    width: auto;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    color: var(--color-fondo-principal);
+    background-color: var(--color-tarjeta);
+}

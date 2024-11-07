@@ -1,0 +1,196 @@
+/*  **********************************  */
+/*  **********  responsive  **********  */
+/*  **********************************  */
+
+
+
+
+@media (width < 1750px) {
+
+    .content__name {
+        font-size: 3.8rem;
+    }
+
+    .content__info {
+        font-size: 2.8rem;
+    }
+}
+
+@media (width < 1550px) {
+
+    /* .content__name {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    } */
+}
+
+
+/*  *****  Responsive de la imagen  *****  */
+@media(width < 1500px) {
+
+    /* .info__conter-container-principal-image {
+        margin-left: 5rem;
+    } */
+}
+
+@media(width < 1450px) {
+
+    .content__name {
+        font-size: 3rem;
+    }
+
+    .info__profesion {
+        font-size: 2rem;
+    }
+
+    .content__info {
+        font-size: 2rem;
+    }
+}
+
+
+@media(width < 1380px) {
+
+    /* .seccion-info__content {
+        width: calc(100% - 50px);
+        height: auto;
+        display: flex;
+        gap: 20px;
+    } */
+
+}
+
+
+@media(width < 1250px) {
+
+    .user-info__container-image {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .content__name {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+
+    .content__info {
+        margin-left: 2rem;
+    }
+
+}
+
+
+@media(width < 1250px) {
+
+    .info__conter-container-principal-image {
+        min-width: 12rem;
+    }
+
+    .container__descripciones {
+        padding: 1.5rem;
+    }
+}
+
+
+@media(width < 768px) {
+
+    .main__seccion-info {
+        width: 100%;
+    }
+
+    .left,
+    .right {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    .content__container {
+        padding: 0rem;
+    }
+
+    .container__descripciones {
+        padding: 3rem;
+    }
+
+    .seccion-info__content {
+        gap: 0;
+    }
+
+    .info__conter-container-principal-image {
+        min-width: 10rem;
+    }
+
+    .user-info__container-image {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .content__info {
+        font-size: 1.8rem;
+    }
+}
+
+@media(width < 700px) {
+
+    .content__info {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .perfil__label {
+        font-size: 2.4rem;
+    }
+
+    .perfil__description {
+        font-size: 1.8rem;
+    }
+
+
+}
+
+@media(width < 650px) {
+
+    .info__conter-container-principal-image {
+        margin-right: 2rem;
+    }
+
+    .content__name {
+        font-size: 2rem;
+    }
+
+    .info__profesion {
+        font-size: 1.8rem;
+    }
+
+    .content__info {
+        font-size: 1.5rem;
+    }
+
+    .info-header {
+        font-size: 3rem;
+    }
+}
+
+
+@media(width < 490px) {
+
+    /* .info__conter-container-principal-image {
+        margin-left: 2rem;
+    } */
+
+    .user-info__container-image {
+        margin-left: 2rem;
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .container__descripciones {
+        padding: 3.2rem;
+    }
+
+
+}
